@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-wrapper">
+            <div class="header-content">
+                <h1>Яркие футболки <br>
+                    для счастливой жизни!</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <a class="btn" href="#main">Читать дальше</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            
+        </div>
+    </header>
+    <main id="main">
+        <div class="main-text animate__animated animate__zoomInDown">
+            <h2 onclick="length()">ФУТБОЛКИ</h2>
+            <span>100% хлопок</span>
+        </div>
+        <div class="main-items">
+            <div class="main-item ">
+                <img src="images/tshirt-3.jpg" alt="short" height="300px"><br>
+                <span class="item-name ">Футболка</span><br>
+                <span class="item-price">499 <sup>руб.</sup> </span><br>
+                <button onclick="alert('Товар добавлен в заказ:\n1 футболка с котиком')">Добавить в заказ</button><br>
+            </div>
+            <div class="main-item">
+                <img src="images/tshirt-2.jpg" alt="short" height="300px"><br>
+                <span class="item-name">Футболка</span><br>
+                <span class="item-price">499 <sup>руб.</sup> </span><br>
+                <button onclick="confirm('Точно добавить?')">Добавить в заказ</button><br>
+            </div>
+        </div>
+    </main>
+    <article>
+        <div class="article-text">
+            <h2>Другие футболки</h2>
+        </div>
+        <div class="article-items">
+            <div class="article-item ">
+                <img src="images/ru127518I10000d42048e6ff356f9a19763279e335e2b.jpg" alt="" height="300px"
+                    width="300px"><br>
+                <span class="item-name">Футболка</span><br>
+                <span class="item-price">499 <sup>руб.</sup> </span><br>
+                <button onclick="alert('Товар добавлен в заказ:\n1 футболка с котиком')">Добавить в заказ</button><br>
+            </div>
+            <div class="article-item">
+                <img src="images/ru100417I1000454112b3a1c0933543886cc40e3e0bde.jpg" alt="" height="300px"
+                    width="300px"><br>
+                <span class="item-name">Футболка</span><br>
+                <span class="item-price">499 <sup>руб.</sup> </span><br>
+                <button onclick="alert('Товар добавлен в заказ:\n1 футболка с котиком')">Добавить в заказ</button><br>
+            </div>
+            <div class="article-item">
+                <img src="images/fzTLFaZ-hmM.jpg" alt="" height="300px"><br>
+                <span class="item-name">Футболка</span><br>
+                <span class="item-price">499 <sup>руб.</sup> </span><br>
+                <button onclick="alert('Товар добавлен в заказ:\n1 футболка с котиком')">Добавить в заказ</button><br>
+            </div>
+            <div class="article-item">
+                <img src="images/c865e6df15b3568dc247419359f71cd2.jpg" alt="" height="300px"><br>
+                <span class="item-name">Футболка</span><br>
+                <span class="item-price">499 <sup>руб.</sup> </span><br>
+                <button onclick="alert('Товар добавлен в заказ:\n1 футболка с котиком')">Добавить в заказ</button><br>
+            </div>
+            <div class="article-item">
+                <img src="images/480z480_front_170_0_0_0_efbb73584cc0de73e5847659ca11.jpg" alt="" height="300px"><br>
+                <span class="item-name">Футболка</span><br>
+                <span class="item-price">499 <sup>руб.</sup> </span><br>
+                <button onclick="alert('Товар добавлен в заказ:\n1 футболка с котиком')">Добавить в заказ</button><br>
+            </div>
+            <div class="article-item">
+                <img src="images/480z480_front_170_0_0_0_a9acc4d6e7d7dcf8e8e5fb2daedf.jpg" alt="" height="300px"><br>
+                <span class="item-name">Футболка</span><br>
+                <span class="item-price">499 <sup>руб.</sup> </span><br>
+                <button onclick="alert('Товар добавлен в заказ:\n1 футболка с котиком')">Добавить в заказ</button><br>
+            </div>
+        </div>
+    </article>
+    <!-- <section class="cupon animate__animated animate__flip wow">
+        <div class="cupon-text">
+            <span>РОЗЫГРЫШ</span><br>
+            <span> 10 000 <sup>руб.</sup></span>
+            <br>
+            <span class="accent">
+                СРЕДИ ОБЛАДАТЕЛЕЙ</span><br>
+            <span class="accent">КУПОНОВ</span>
+            <br>
+            <span>Вечером 1 июня команда разыграет приз в прямом эфире!</span>
+        </div>
+        <div class="cupon-image">
+            <img src="images/money.jpg" alt="" width="200px" height="200px">
+        </div>
+    </section> -->
+    <section class="order">
+        <h2>Ваш заказ</h2>
+        <div class="yellow">
+            <h3>Корзина пуста</h3>
+        </div>
+        <div class="grey">
+            В корзине пусто!
+        </div>
+    </section>
+    <section class="order-form animate__animated animate__zoomIn wow">
+        <form action="/action-page">
+            <h2>Оформление заказа</h2>
+            <label for="username">Имя</label><br>
+            <input type="text" id="username" name="username" placeholder="Имя" required><br>
+            <label for="lname">Фамилия</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Фамилия" required><br>
+            <label for="email">Электронный почта</label><br>
+            <input type="email" id="email" name="email" placeholder="Email" required><br>
+            <label for="phone">Телефон</label><br>
+            <input type="text" id="phone" name="phone" placeholder="Номер телефона" required><br>
+            <div class="paimen-text">Оплата онлайн</div>
+            <hr>
+            <button>Перейти к оплате</button>
+        </form>
+    </section>
+    <div class="rating">
+        <h2>Оцени наш сайт!</h2>
+        <img src="images/star_2.png" width="75" height="68" id="star-1" onmouseenter="star(1)">
+        <img src="images/star_2.png" width="75" height="68" id="star-2" onmouseenter="star(2)">
+        <img src="images/star_2.png" width="75" height="68" id="star-3" onmouseenter="star(3)">
+        <img src="images/star_2.png" width="75" height="68" id="star-4" onmouseenter="star(4)">
+        <img src="images/star_2.png" width="75" height="68" id="star-5" onmouseenter="star(5)">
+
+        <p onclick="resetRating()">Сброс</p>
+        <button id="sendRating">Отправить</button>
+        <p id="ratingText"></p>
+    </div>
+    <script src="script.js"></script>
+    <script src="test.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
